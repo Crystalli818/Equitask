@@ -55,7 +55,7 @@ String specialCare = "";
       body:Column(children:[
         Row(children: [
           Image.network(width:200,
-              "https://www.theinsuranceemporium.co.uk/blog/wp-content/uploads/2023/09/image-10.png"),
+              "https://horsej.b-cdn.net/files/styles/article_large/public/pictures-videos/articles/shutterstock_733256173_-_rita_kochmarjova-mainweb.jpg?itok=wdbU0yW-"),
           Flexible(child:Column(children:[
             TextField(onChanged:(newText){name = newText;},decoration:InputDecoration(border: OutlineInputBorder(),hintText:"Name")),
             TextField(onChanged:(newText){age = int.parse(newText);},decoration:InputDecoration(border: OutlineInputBorder(),hintText:"Age")),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'horse.dart';
 import 'horse_add_page.dart';
+import 'horse_booking_page.dart';
 import 'horse_list_page.dart';
 import 'horse_schedule.dart';
 class HorseMenuPage extends StatefulWidget {
@@ -64,7 +65,11 @@ class _HorseMenuPageState extends State<HorseMenuPage> {
           padding:EdgeInsets.fromLTRB(80,20 ,80 ,50),
           child:ElevatedButton(
           child:Text("Booking",style:TextStyle(fontSize:35.0)),
-          onPressed: () {  },),),
+          onPressed: () { Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const HorseBookingPage(),
+            ),
+          ); },),),
         Padding(
           padding:EdgeInsets.fromLTRB(80,20 ,80 ,50),
           child:ElevatedButton(
